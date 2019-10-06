@@ -11,37 +11,27 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <ImageView
 
-            android:id="@+id/birthday_image"
+        <EditText
+            android:id="@+id/url_edit_text"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@android:color/darker_gray"
-            android:src="@drawable/birthday" />
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingTop="8dp"
+            android:text="Enter the url and wait for the search result" />
 
         <ScrollView
+            android:id="@+id/scroll_in_url"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scrollIndicators="right">
+            android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/good_morning_text"
-                android:layout_width="wrap_content"
+                android:id="@+id/url_text"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:textColor="@android:color/black"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-
+                android:layout_marginLeft="16dp"
+                android:paddingTop="8dp" />
         </ScrollView>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/birthday_image"
-            android:clickable="true"
-            android:text="This is it!!!!!"
-            android:textSize="32sp" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
